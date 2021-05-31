@@ -5,7 +5,7 @@
 * [Introduction](#Introduction)
   * [Software Version](#Software-Version)
 * [General Overview](#General-Overview)
-  * [Introduction](#Introduction)
+  * [Introduction](#Introduction-1)
   * [Main sections](#Main-sections)
 * [Logging into the system](#Logging-into-the-system)
 * [Scenarios](#Scenarios)
