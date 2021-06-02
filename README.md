@@ -11,6 +11,6 @@ XComponent Scenario models and runs your complex business processes by better ex
 | :---------- | :---- |
 | Public SaaS portal | [X4B SaaS](https://x4b.xcomponent.com) |
 | XC Scenario Concepts | [XC Scenario Concepts](concepts/README.md) |
-| XC Scenario User's Guide | [XC Scenario User Guide](user-guide/user_guide.md) |
+| XC Scenario User's Guide | [XC Scenario User Guide](user-guide/README.md) |
 | XC Scenario Developers's Guide | [XC Scenario Dev Guide](dev-guide/README.md) |
 | Implementing Scenario tasks with OpenFaas | [Synchronous function](openfaas/synchronous.md) |
