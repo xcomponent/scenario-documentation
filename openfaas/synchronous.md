@@ -96,6 +96,8 @@ whatever value was configured in your installation of XC Scenario. Please
 contact your X4B/Scenario administrator to find out the right label to use
 here.
 
+For a more detailed list of labels supported by XC Scenario, please refer to the [labels reference page](./reference.md)
+
 After applying these changes, here's what the modified `pyfunc.yml` file looks
 like:
 
@@ -270,6 +272,8 @@ The `com.xcomponent.inputs` properties define function _inputs_, and
 appended to the property name, and the value indicates the parameter's type.
 
 All the XC Scenario base types can be used : String, Number, Boolean.
+
+For a more detailed list of labels supported by XC Scenario, please refer to the [labels reference page](./reference.md)
 
 ### New handler.py
 
