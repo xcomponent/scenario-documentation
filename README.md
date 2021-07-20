@@ -14,3 +14,4 @@ XComponent Scenario models and runs your complex business processes by better ex
 | XC Scenario User's Guide | [XC Scenario User Guide](user-guide/README.md) |
 | XC Scenario Developers's Guide | [XC Scenario Dev Guide](dev-guide/README.md) |
 | Implementing Scenario tasks with OpenFaas | [Synchronous function](openfaas/synchronous.md) |
+| OpenFaas Labels Reference | [OpenFaas Labels Reference](openfaas/reference.md) |
