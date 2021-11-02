@@ -13,7 +13,7 @@
 * [REST Endpoints](#rest-endpoints)
   * [Overview](#overview)
   * [Data formats](#data-formats)
-  * [Authentication with Koordinator](#authentication-with-koordinator)
+  * [Authentication with Scenario](#authentication-with-scenario)
   * [GET /api/Service Status](#get-apiservice-status)
     * [Description](#description)
     * [Parameters](#parameters)
@@ -212,7 +212,7 @@ and not
 "count": 256
 ```
 
-## Authentication with Koordinator
+## Authentication with Scenario
 
 A technical token must be stored by the worker for authentication. That token
 must be indicated in the _Authorisation_ header in all the HTTP requests made
