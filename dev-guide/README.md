@@ -14,7 +14,7 @@
   * [Overview](#overview)
   * [Data formats](#data-formats)
   * [Authentication with Scenario](#authentication-with-scenario)
-  * [GET /api/Service Status](#get-apiservice-status)
+  * [GET /api/ServiceStatus](#get-apiservice-status)
     * [Description](#description)
     * [Parameters](#parameters)
     * [Return status](#return-status)
@@ -250,14 +250,40 @@ lack of a valid token).
 administrative policies. Please contact your IT administrator if you cannot
 request a token.
 
+## URL Prefix
+
+The general format of the URLs for the REST endpoints is
+
+``` console
+${BASE_URL}/${endpointname}/${operation}
+```
+
+The BASE_URL points to your Scenario server. For example, Invivoo has an online Scenario instance that can be found at https://scenario.xcomponent.com. You should replace this with the appropriate value at your site.
+
+The `endpointname` is 
+
+| Service | Endpoint name |
+| --- | --- |
+| AdministrationService | administration |
+| Authentication API | authentication |
+| AuthorizationService | authorization |
+| MonitoringService | monitoring |
+| PollingService | polling |
+| TaskCatalogService | taskcatalog |
+| TaskStatusService | taskstatus |
+| UploadService | upload |
+| WorkflowService | workflows |
+
+Note the 's' in "workflows".
+
 The next section details the Authentication service endpoint, and its usage for
 both human and program users.
 
-## GET /api/Service Status
+## GET /api/ServiceStatus
 
 ### Description
 
-The following sections describe some of the service endpoints exposed by the Koordinator server. All of these services share one common API call, called /api/Service Status, that can be used to test if an endpoint is up and running
+The following sections describe some of the service endpoints exposed by the Koordinator server. All of these services share one common API call, called /api/ServiceStatus, that can be used to test if an endpoint is up and running
 
 ### Parameters
 
