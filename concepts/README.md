@@ -10,7 +10,7 @@
   * [Workers and Integration Endpoints](#Workers-and-Integration-Endpoints)
   * [The Worker API](#The-Worker-API)
   * [User Interaction](#User-Interaction)
-* [Tasks](#Tasks)
+* [Tasks](#tasks)
   * [Overview](#Overview)
   * [The Task Catalog](#The-Task-Catalog)
   * [Namespaces](#Namespaces)
