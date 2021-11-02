@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-* [Introduction](#Introduction)
-  * [Software Version](#Software-Version)
-  * [Documentation Overview](#Documentation-Overview)
-* [General Description and Concepts](#General-Description-and-Concepts)
+* [Introduction](#introduction)
+  * [Software Version](#software-version)
+  * [Documentation Overview](#documentation-overview)
+* [General Description and Concepts](#general-description-and-concepts)
   * [Scenario](#Scenario)
   * [Workers and Integration Endpoints](#Workers-and-Integration-Endpoints)
   * [The Worker API](#The-Worker-API)
