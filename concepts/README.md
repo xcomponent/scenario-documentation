@@ -36,7 +36,6 @@
 * [User roles and rights](#user-roles-and-rights)
   * [User management](#user-management)
   * [Profiles](#profiles)
-* [SSO Authentication](#sso-authentication)
 * [Workspaces](#workspaces)
 
 # Introduction
@@ -470,30 +469,6 @@ not allowed to start workflows, these applies to all workflows.
 
 Future versions of Scenario may implement a wider set of profiles and rights,
 and finer granularity.
-
-# SSO Authentication
-
-Single Sign-On authentication is implemented using the SAML 2.0
-protocol. Scenario backend communicates with CACIBs’ Identity Provider
-(GTIS) to authenticate users. The steps for this authentication are described
-by the following diagram:
-
-![SSO Authentication](sso.png)
-
-1. User starts authentication. A request is sent to the Scenario backend.
-2. Scenario Backend builds a SAML Request object and redirects user to GTIS
-   (The SAML Request object is in the redirection request)
-3. User sends the request to GTIS and gets authenticated. 2 scenarios exist
-   depending on the web browser being used:
-   * On Internet Explorer the user is automatically authenticated using his
-    Windows session
-   * On any other browser the user will have to enter his credentials
-4. GTIS redirects the user to the Scenario backend through an automatic form
-   submission. That form contains a SAML Response object.
-5. User browser sends the response object to the Scenario backend.
-6. Scenario backend validates the SAML Response and generates a Token (JWT)
-   and sends it to the user to be stored. User now has access to Scenario
-   web application and uses the token for the next requests.
 
 # Workspaces
 
