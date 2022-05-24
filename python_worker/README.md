@@ -34,6 +34,8 @@ For more background information on workers and the worker API, see
 * [XC Scenario Concepts](https://xcomponent.github.io/scenario-documentation/concepts/)
 * [XC Scenario Developer’s Guide](https://xcomponent.github.io/scenario-documentation/dev-guide/)
 
+The code for this example implementation can be found on [GitHub](https://github.com/xcomponent/scenario-documentation/tree/main/python_worker).
+
 ## Software version
 
 This document corresponds to version 23.1 of the Scenario software. To check
@@ -72,7 +74,7 @@ from the module becoming a possible task.
 The script also implements a notification mechanism to allow user functions to
 post task statuses.
 
-The code for the example `worker.py` script provided in this repository has
+The code for the example `worker.py` script provided in [this repository](https://github.com/xcomponent/scenario-documentation/tree/main/python_worker) has
 been extensively commented, so don't hesitate to read the source code for more
 details on what the code does.
 
