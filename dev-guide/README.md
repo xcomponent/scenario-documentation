@@ -579,8 +579,8 @@ should post **TaskStatusEvents** with status=**In Progress**, and a message
 field describing the state of the task execution (ideally with a completion
 percentage if possible).
 
-When a task completes, workers should fill the **invariants** and
-**outputValues** properties of the **TaskStatusEvent**.
+When a task completes, workers should fill the **outputValues** properties 
+of the **TaskStatusEvent**.
 
 ### Parameters
 
