@@ -23,9 +23,7 @@
   * [Task versions](#task-versions)
 * [Scenario](#scenario)
   * [Scenario Definition](#scenario-definition)
-    * [Task Pipelines](#task-pipelines)
-	* [Scenario Invariants](#scenario-invariants)
-	* [Scenario Re-Runs](#scenario-re-runs)
+	  * [Scenario Re-Runs](#scenario-re-runs)
   * [Scenario Versions](#scenario-versions)
   * [Workflow Task Definition](#workflow-task-definition)
   * [Scenario Instance](#scenario-instance)
@@ -126,8 +124,8 @@ The overall lifecycle of a user’s interaction with Scenario is as follows:
 - Create a new scenario, by picking tasks from the task catalog, defining their
   inputs and outputs, and arranging the order of their execution. A scenario
   may consist of a simple enumeration of tasks, to be performed sequentially,
-  or it can have more complex arrangements of tasks, such as `fork`, `join`,
-  and `pipeline`, described in [Scenario Definition](#Scenario-Definition).
+  or it can have more complex arrangements of tasks, such as `fork`and `join`
+  described in [Scenario Definition](#Scenario-Definition).
 - Launch the execution of a scenario, specifying values for the input parameters.
 - Monitor the progress of the scenario instance on the monitoring interface
   (called the “Cockpit”, see the User’s Guide eventually “zooming in” to review
@@ -279,13 +277,12 @@ in [Task aspects](#Task-aspects) above) when it is included in a scenario
 definition. Hundreds of scenario definitions can be created and stored in the
 Scenario server.
 
-Tasks may be arranged is several ways:
+Tasks may be arranged in several ways:
 * connect several tasks in sequence, to be executed in that order
 * connect one task to several others (fork). For example, in the the diagram
   below, First forks into Second and Third. When First completes its execution,
   all the tasks in the fork (in this case Second and Third) are started.
 * connect many tasks to one, using the Join operator
-* create a pipeline of calculations (see next paragraph)
 
 Here’s a view of the Graphical Designer in action :
 
@@ -293,34 +290,6 @@ Here’s a view of the Graphical Designer in action :
 
 Please consult the Scenario User’s Guide for the detailed explanation of how to
 use the graphical designer to design your scenarios.
-
-### Task Pipelines
-
-A task pipeline is a construct in the scenario designer that lets users
-efficiently arrange calculations that involve very large sets of data, using a
-streaming paradigm.
-
-| Icon | Description |
-| --- | --- |
-| ![Pipeline icon](pipeline_icon.png) | A pipeline has a top task (the initial one) and a bottom task (the final one). The top task splits its output into a large number of parallel streams, where the data flows are processed in parallel and independently of each other. The pipeline completes its execution when every stream has finished its own execution. |
-
-Pipelines should only be used in situations involving truly large datasets, as
-in a “Big Data” context.
-
-### Scenario Invariants
-
-To help verify the correct execution of complex scenarios, Scenario supports a
-general mechanism using user-defined KPI’s called **invariants**. An invariant
-is some KPI or metric calculated by different tasks in the scenario, where it
-is expected that all tasks calculate the same value if execution is correct.
-
-A typical example is a pipeline of calculations across a large number of
-records: you can define the number of records processed to be an invariant. The
-first task in the pipeline will store in its invariant the number of records
-that it has sent down the pipeline, and the last task will store the number of
-records it has actually received. The scenario execution will be successful
-only if the two tasks compute the same number. Otherwise, the scenario goes
-into error state, with the mention _Invariant Error_.
 
 ### Scenario Re-Runs
 
@@ -431,8 +400,6 @@ information to the Scenario server running this scenario:
 * An _error level_, indicating the gravity of the error situation (see the Data
   Dictionary for details of the allowed values)
 * A set of _output values_, corresponding to the task’s output parameters
-* A set of _invariants_, if defined for this scenario, as described
-  in [Scenario Invariants](#Scenario-Invariants) above.
 
 # User roles and rights
 
