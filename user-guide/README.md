@@ -202,9 +202,9 @@ scenario graph design area, as shown here:
 
 ![Drag drop](drag_drop_red.png)
 
-Other icons allow a user to define _pipelines_ of tasks, and to _join_ several
-tasks in a synchonization tasks. These notions are explained in the Scenario
-Concepts Guide, and the practical aspects are detailed in the next sections.
+Other icons allow a user to _join_ several tasks in a synchonization tasks. 
+These notions are explained in the Scenario Concepts Guide, and the practical
+aspects are detailed in the next sections.
 
 When the user clicks on the newly added task, the right-side panel changes from
 displaying scenario parameters to displaying the following task-level
