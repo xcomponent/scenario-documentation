@@ -16,4 +16,4 @@ XComponent Scenario models and runs your complex business processes by better ex
 | Sample python worker | [Python worker](python_worker/README.md) |
 | Implementing Scenario tasks with OpenFaas | [Synchronous function](openfaas/synchronous.md) |
 | OpenFaas Labels Reference | [OpenFaas Supported Labels Reference](openfaas/reference.md) 
-| Completing an HTTP task | [Complete HTTP](complete_http/README.md) |
+| Completing an HTTP task | [Complete HTTP task](complete_http/README.md) |
